@@ -1,0 +1,16 @@
+---
+layout: "page"
+---
+
+{% if page.title == "Nouveau titre" %}
+	C'est mon premier if avec nouveau titre
+{% elsif page.title == "Mon Premier Article Utilisant Html" %}
+	C'est mon premier if avec mon premier article html
+{% else %}
+	C'est mon premier avec un autre article
+{% endif %}
+
+<h2>{{ page.title }}</h2>
+<hr>
+
+{{ content }}

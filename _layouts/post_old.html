@@ -1,0 +1,14 @@
+---
+layout: "ada"
+---
+
+{% if page.title == "Nouveau titre" %}
+	C'est mon premier if avec mon nouveau titre
+{% elsif page.title != "Nouveau titre" %}
+	C'est mon premier if mais pas de nouveau titre
+{% endif %}
+
+<h2>{{ page.title }}</h2>
+<hr>
+
+{{ content }}
